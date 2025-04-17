@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import ReactMarkdown from "react-markdown";
+import React from "react";
 
 export default function Home() {
   const [users, setUsers] = useState([]);
