@@ -2,4 +2,4 @@ fastapi
 uvicorn
 google-generativeai
 langchain
-langchain-core
+langchain-google-genai
