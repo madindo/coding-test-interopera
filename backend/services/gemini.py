@@ -3,13 +3,13 @@ import re
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
 import os
-#from dotenv import load_dotenv
+from dotenv import load_dotenv
 
 # Load .env variables
-#load_dotenv()
+load_dotenv()
 
 # Grab API key securely
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "AIzaSyALj3I-PERDBTWYYNSnUkt7EKRRju9Tul8")  # fallback included
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")  # fallback included
 model = ChatGoogleGenerativeAI(model="models/gemini-1.5-pro", google_api_key=GOOGLE_API_KEY)
 
 
